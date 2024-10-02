@@ -22,9 +22,11 @@
 
         <!-- Styles -->
         {{-- Laravel標準で用意されているCSSを読み込みます --}}
-        <link href="{{ asset('css/profile.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/profile.css') }}" rel="stylesheet">
         {{-- この章の後半で作成するCSSを読み込みます --}}
-        <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
+        <!-- <link href="{{ asset('css/admin.css') }}" rel="stylesheet"> -->
+        <link href="{{ secure_asset('css/profile.css') }}" rel="stylesheet">
+    
     </head>
     <body>
         <div id="app">
